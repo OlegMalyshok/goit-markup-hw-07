@@ -9,6 +9,8 @@
   refs.closeModalBtn.addEventListener("click", toggleModal);
 
   function toggleModal() {
+    const body = document.querySelector("body");
+    body.classList.toggle("no-scroll");
     refs.modal.classList.toggle("is-hidden");
   }
 })();

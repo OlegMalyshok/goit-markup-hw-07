@@ -19,14 +19,28 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
   <body>
     <header class="header">
-      <div class="container header-container">
+      <div class="container header-container" >
+        <a href="./index.html" class="header-logo link">
+          Web <span>Studio</span></a
+        >
+        <button type="button" class="header-btn-mobile js-open-menu" >
+          <svg class="mobile-btn-open" width="32px" height="32px">
+            <use href="./images/sprite.svg#icon-icon-menu"></use>
+          </svg>
+        </button>
+        <div class="header-nav-wrap js-menu-container" >
+          <button type="button" class="header-btn-mobile-close js-close-menu" >
+            <svg class="mobile-icon-close" width="8px" height="8px">
+              <use href="./images/sprite.svg#icon-close-black-18dp-2-1"></use>
+            </svg>
+          </button>
         <nav class="header-navigation">
-          <a href="./index.html" class="header-logo link">
-            Web <span>Studio</span></a
-          >
           <ul class="header-list list">
             <li class="header-item">
               <a href="" class="header-link link studio-current">Studio</a>
@@ -40,20 +54,53 @@
           </ul>
         </nav>
         <address class="header-addres">
-          <ul class="header-list list">
-            <li>
-              <a href="mailto:info@devstudio.com" class="header-mail link"
-                >info@devstudio.com</a
-              >
-            </li>
+          <ul class="addres-list list">
             <li>
               <a href="tel:+110001111111" class="header-tel link"
                 >+11 (000) 111-11-11</a
               >
             </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="header-mail link"
+                >info@devstudio.com</a
+              >
+            </li>
           </ul>
         </address>
+        <div class="mobile-social">
+        <ul class="mobile-social-icon-list list">
+          <li>
+            <a href="" class="mobile-social-link link">
+              <svg class="mobile-icon" width="24px" height="24px">
+                <use href="./images/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="" class="mobile-social-link link">
+              <svg class="mobile-icon" width="24px" height="24px">
+                <use href="./images/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="facebook">
+            <a href="" class="mobile-social-link link">
+              <svg class="mobile-icon" width="24px" height="24px">
+                <use href="./images/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="linkedin">
+            <a href="" class="mobile-social-link link">
+              <svg class="mobile-icon" width="24px" height="24px">
+                <use href="./images/sprite.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
+      </div>
+    </div>
     </header>
     <main>
       <!-- Hero section -->
@@ -87,14 +134,14 @@
                 within the shortest possible time.
               </p>
             </li>
-            <li class="section-first-item icon-diagram">
+            <li class="section-first-item icon-diagram sfi-dil">
               <h3 class="section-first-heading">Diligence</h3>
               <p class="section-first-text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <li class="section-first-item icon-astronaut">
+            <li class="section-first-item icon-astronaut sfi-lust">
               <h3 class="section-first-heading">Technologies</h3>
               <p class="section-first-text">
                 Design practice focused on digital experiences. We bring forth a
@@ -111,21 +158,21 @@
           <h2 class="section-second-tittle">What are we doing</h2>
           <ul class="section-second-list list">
             <li class="section-second-item">
-              <img
+              <img srcset="./images/Whatarewedoing1.jpg 1x, ./images/SecSecFir2x.jpg 2x"
                 src="./images/Whatarewedoing1.jpg"
                 alt="An example of our work"
                 width="360"
               />
             </li>
             <li class="section-second-item">
-              <img
+              <img srcset="./images/Whatarewedoing2.jpg 1x, ./images/SecSecSec2x.jpg 2x"
                 src="./images/Whatarewedoing2.jpg"
                 alt="An example of our work"
                 width="360"
               />
             </li>
             <li class="section-second-item">
-              <img
+              <img srcset="./images/Whatarewedoing3.jpg 1x, ./images/SecSecThi2x.jpg 2x"
                 src="./images/Whatarewedoing3.jpg"
                 alt="An example of our work"
                 width="360"
@@ -141,7 +188,7 @@
           <h2 class="section-third-tittle">Our Team</h2>
           <ul class="section-third-list list">
             <li class="section-third-item">
-              <img
+              <img srcset="./images/Mark.jpg 1x, ./images/Mark2x.jpg 2x"
                 src="./images/Mark.jpg"
                 alt="photo of the employee"
                 width="264"
@@ -184,7 +231,7 @@
               </div>
             </li>
             <li class="section-third-item">
-              <img
+              <img srcset="./images/Tom.jpg 1x, ./images/Tom2x.jpg 2x"
                 src="./images/Tom.jpg"
                 alt="photo of the employee"
                 width="264"
@@ -227,7 +274,7 @@
               </div>
             </li>
             <li class="section-third-item">
-              <img
+              <img srcset="./images/Camila.jpg 1x, ./images/Camila2x.jpg 2x"
                 src="./images/Camila.jpg"
                 alt="photo of the employee"
                 width="264"
@@ -270,7 +317,7 @@
               </div>
             </li>
             <li class="section-third-item">
-              <img
+              <img srcset="./images/Daniel.jpg 1x, ./images/Daniel2x.jpg 2x"
                 src="./images/Daniel.jpg"
                 alt="photo of the employee"
                 width="264"
@@ -428,7 +475,7 @@
                 <span class="ftr-btn-tx">Subscribe</span>
                 <svg class="sub-icon" >
                   <use href="./images/sprite.svg#icon-footer-icon-sub"></use>
-                </svg> 
+                </svg>
               </button>
             </div>
       </div>
@@ -526,5 +573,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

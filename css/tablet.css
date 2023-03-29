@@ -1,0 +1,259 @@
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 766px;
+  }
+
+  .header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 48px;
+  }
+
+  .header-list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-bottom: 0;
+  }
+
+  .header-logo {
+    margin-right: 120px;
+  }
+
+  .header-link {
+    display: flex;
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header-link:hover,
+  .header-link:focus {
+    color: #4d5ae5;
+  }
+
+  .studio-current {
+    color: #404bbf;
+  }
+
+  .studio-current::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    bottom: 0px;
+    background-color: #404bbf;
+    border-radius: 2px;
+    margin-bottom: -30px;
+  }
+
+  .header-addres {
+    display: flex;
+    height: 48px;
+  }
+
+  .addres-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-left: 121px;
+  }
+  .header-mail {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header-tel {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-mail:hover,
+  .header-mail:focus {
+    color: #4d5ae5;
+  }
+
+  .header-tel:hover,
+  .header-tel:focus {
+    color: #4d5ae5;
+  }
+
+  .header-btn-mobile {
+    display: none;
+  }
+
+  .header-btn-mobile-close {
+    display: none;
+  }
+
+  .header-nav-wrap {
+    background-color: transparent;
+    max-width: unset;
+    width: unset;
+    height: unset;
+    position: static;
+    padding: unset;
+    box-shadow: unset;
+    opacity: 1;
+    visibility: unset;
+    pointer-events: unset;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .mobile-social {
+    display: none;
+  }
+
+  .hero {
+    padding-top: 112px;
+    padding-bottom: 112px;
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg-tab.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bg-tab2x.jpg);
+    }
+  }
+
+  .hero-title {
+    font-size: 56px;
+    margin-bottom: 36px;
+    width: 496px;
+  }
+
+  .section-first {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .section-first-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+  }
+
+  .section-first-text {
+    width: 356px;
+  }
+
+  .sfi-dil {
+    margin-bottom: 0;
+  }
+
+  .sfi-lust {
+    margin-bottom: 0px;
+  }
+
+  .section-second {
+    display: none;
+  }
+
+  .section-third {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .section-third-list {
+    row-gap: 64px;
+    column-gap: 24px;
+  }
+
+  .section-customers {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .customers-list {
+    display: flex;
+    justify-content: center;
+    row-gap: 72px;
+    column-gap: 24px;
+    margin: auto;
+    width: 552px;
+  }
+
+  .customers-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 168px;
+    height: 88px;
+  }
+
+  .footer {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+    padding-left: 110px;
+  }
+
+  .footer-container-logo {
+    margin-bottom: 0;
+  }
+
+  .footer-social {
+    margin-bottom: 0;
+    align-items: flex-start;
+  }
+
+  .footer-logo {
+    justify-content: flex-start;
+  }
+
+  .footer-label span {
+    text-align: left;
+  }
+
+  .footer-control {
+    flex-direction: row;
+  }
+
+  .footer-input {
+    width: 264px;
+  }
+}
