@@ -334,7 +334,6 @@ body.no-scroll {
   text-align: center;
   color: var(--secondary-title-color);
   margin-bottom: var(--basic-margin-text);
-  text-align: left;
 }
 .section-first-text {
   font-weight: 500;
@@ -1015,7 +1014,8 @@ body.no-scroll {
 }
 
 .checkbox-icon {
-  width: 16px;
+  width: 100%;
+  max-width: 16px;
   height: 16px;
   display: inline-block;
   background-color: #f4f4fd;

@@ -171,6 +171,10 @@
     column-gap: 24px;
   }
 
+  .section-first-heading {
+    text-align: left;
+  }
+
   .section-first-text {
     width: 356px;
   }
