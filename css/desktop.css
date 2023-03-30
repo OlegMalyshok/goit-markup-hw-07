@@ -44,6 +44,8 @@
   .hero {
     padding-top: 188px;
     padding-bottom: 188px;
+    max-width: 1440px;
+    min-height: 600px;
     background-image: linear-gradient(
         to right,
         rgba(46, 47, 66, 0.7),
@@ -118,7 +120,7 @@
   .section-first-text {
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.2;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--main-text-color);
     width: 264px;

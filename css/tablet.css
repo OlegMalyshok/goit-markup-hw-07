@@ -157,7 +157,7 @@
   .hero-title {
     font-size: 56px;
     margin-bottom: 36px;
-    width: 496px;
+    max-width: 496px;
   }
 
   .section-first {

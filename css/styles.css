@@ -37,7 +37,6 @@ body.no-scroll {
 }
 
 .container {
-  /* max-width: 1158px; */
   width: 100%;
   margin: 0 auto;
   padding-left: 15px;
@@ -95,7 +94,6 @@ body.no-scroll {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-bottom: 284px;
 }
 
 .header-link {
@@ -160,10 +158,12 @@ body.no-scroll {
 /* Mobile */
 
 .header-nav-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #fff;
-  max-width: 428px;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   position: fixed;
   top: 0;
   right: 0;
@@ -245,8 +245,7 @@ body.no-scroll {
   background: var(--main-backgrounds-color);
   padding-top: 112px;
   padding-bottom: 112px;
-  max-width: 1440px;
-  min-height: 600px;
+
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
@@ -281,7 +280,9 @@ body.no-scroll {
   margin: 0 auto 72px auto;
   width: 496px;
   display: block;
-  width: 320px;
+  max-width: 320px;
+  width: 100%;
+  text-align: center;
 }
 
 .hero-btn {
@@ -333,13 +334,14 @@ body.no-scroll {
   text-align: center;
   color: var(--secondary-title-color);
   margin-bottom: var(--basic-margin-text);
+  text-align: left;
 }
 .section-first-text {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   color: var(--main-text-color);
-  width: 396px;
+  width: 100%;
 }
 
 .section-first-list {
@@ -473,7 +475,8 @@ body.no-scroll {
   flex-wrap: wrap;
   column-gap: 16px;
   row-gap: 72px;
-  width: 396px;
+  width: 100%;
+  justify-content: center;
 }
 
 .customers-list-item {
@@ -598,7 +601,6 @@ body.no-scroll {
 .footer-sub {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .footer-label span {
@@ -613,7 +615,7 @@ body.no-scroll {
 }
 
 .footer-input {
-  width: 398px;
+  width: 100%;
   height: 40px;
   border: 1px solid #ffffff;
   background-color: #2e2f42;
